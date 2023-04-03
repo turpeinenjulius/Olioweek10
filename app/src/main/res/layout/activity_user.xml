@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".olioweek9.MainActivity">
+
+    <Button
+        android:id="@+id/buttonAddUser"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="addUser"
+        android:text="Lisää käyttäjä"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:height="35dp"
+        android:ems="10"
+        android:hint="Etunimi"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:height="36dp"
+        android:ems="10"
+        android:hint="Sukunimi"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:height="35dp"
+        android:ems="10"
+        android:hint="Sähköposti"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail">
+
+        <RadioButton
+            android:id="@+id/radioButtonTiTe"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Tietotekniikka" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTuTa"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Tuotantotalous" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLaTe"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Laskennallinen tekniikka" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSäTe"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Sähkötekniikka" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxKandidaatti"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Kandidaatin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiplomiInsinoori"
+        android:layout_width="209dp"
+        android:layout_height="30dp"
+        android:text="Diplomi-insinöörin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxKandidaatti" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTekniikanTohtori"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+        android:text="Tekniikan tohtorin tutkinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiplomiInsinoori" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUimaMaisteri"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+        android:text="Uimamaisteri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTekniikanTohtori" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginTop="5dp"
+    android:background="#DD0C7E"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userViewFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First name" />
+
+        <TextView
+            android:id="@+id/userViewLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last name" />
+
+        <TextView
+            android:id="@+id/userViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email" />
+
+        <TextView
+            android:id="@+id/userViewDegreeProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="degree program" />
+
+        <TextView
+            android:id="@+id/userViewDegrees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="degrees" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
